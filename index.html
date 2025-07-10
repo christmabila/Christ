@@ -5,6 +5,440 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Brillant-4.css">
     <title>Model</title>
+    <script>
+      *,
+
+*::before,
+
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --red-color: rgb(229, 9, 20);
+    --1px: 0.0625rem;
+    --4px: 0.25rem;
+    --5px: 0.3125;
+    --8px: 0.5rem;
+    --10px: 0.625rem;
+    --12px: 0.75rem;
+    --14px: 0.875rem;
+    --16px: 1rem;
+    --18px: 1.125rem;
+    --20px: 1.25rem;
+    --22px: 1.375rem;
+    --24px: 1.5rem;
+    --28px: 1.75rem;
+    --32px: 2rem;
+    --40px: 2.5rem;
+    --48px: 3rem;
+    --50px: 3.125rem;
+    --52px: 3.25rem;
+    --54px: 3.375rem;
+    --56px: 3.5rem;
+    --60px: 3.75rem;
+    --66px: 4.125rem;
+    --72px: 4.5rem;
+    --80px: 5rem;
+    --120px: 7.5rem;
+    --160px: 10rem;
+    --200px: 12.5rem;
+    --382px: 23.875rem;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--black-color);
+}
+    
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--80px);
+}
+
+.header-left {
+    height: var(--32px);
+    width: var(--80px);
+}
+
+.header-left a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--24px);
+    font-weight: 800;
+    height: var(--32px);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.header img {
+    height: var(--28px);
+    width: var(--28px);
+}
+
+.header-right {
+    height: var(--32px);
+    width: var(--80px);
+}
+
+.header-right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--14px);
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+    min-width: var(--80px);
+}
+
+.red-button {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border: var(--1px) solid var(--red-color);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.25s ease;
+}
+
+.red-button:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: var(--120px) auto 0;
+    padding: 0 var(--8px) 200px;
+    border-bottom: 1px solid red;
+}
+h1 {
+    font-size: var(--48px);
+}
+
+h1 span {
+    color: var(--red-color);
+    font-size: inherit;
+}
+
+.presentation .text-presenration {
+    font-size: var(--14px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enter-email p {
+    font-size: var(--14px);
+    margin: 24px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--16px);
+}
+
+input {
+    height: var(--56px);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    padding-left: 30px;
+    min-width: 160px;
+}
+
+input:focus {
+    border: 2px solid var(--white-color);
+    outline: none;
+}
+
+input::placeholder {
+  font-size: var(--14px);
+  color: #888;
+  transform: translateY(0);
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+input:focus::placeholder {
+  font-size: var(--10px);
+  transform: translateY(-2px);
+  color: var(--white-color);
+}
+
+.get-started {
+    height: var(--56px);
+    width: 160px;
+    font-size: var(--18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.curve-container {
+    margin-top: 120px;
+    height: 100px;
+    width: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curve {
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-color);
+    border-radius: 75% 75% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid var(--black-color);
+}
+
+.curve::before {
+    content: "";
+    background-image: linear-gradient(to right, rgb(117, 30, 69), rgb(229, 9, 20), rgb(117, 30, 69));
+    height: 107%;
+    width: 105%;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 75% 75% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    font-size: var(--18px);
+    margin: 0 0 var(--16px);
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--16px);
+}
+
+.reasons-items{
+    height: 180px;
+    padding: 24px 16px;
+    border-radius: 16px;
+    background-image: linear-gradient(149deg, rgb(25, 34, 71) 0%, rgb(33, 14, 23) 99.08%);
+    position: relative;
+    width: 100%;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-reasons {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-reasons {
+    -webkit-text-size-adjust: 100%;
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    transform: translate(36px, 36px) scale(0.88)translate(-36px, -36px);
+    margin: 0 24px 12px 0;
+}
+
+.faq {
+    width: 100%;
+    margin: 60px auto;
+}
+
+.faq h2 {
+    margin-bottom: 16px;
+}
+
+.faq-item {
+    border-top: 1px solid #333;
+    background-color: #222;
+    margin-top: 8px;
+    min-height: 72px;
+
+}
+
+.faq-question {
+    height: 72px;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question .icon {
+    font-size: 36px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question .icon svg {
+    height: 28px;
+    width: 28px;
+}
+
+.faq-question.active .icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    display: none;
+    background: #222;
+    padding: 20px;
+    border-top: 1px solid #000;
+}
+
+.faq-answer p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.email-bottom {
+    margin-top: var(--80px);
+}
+
+@media (max-width: 329px) {
+    /* Smartphone */
+    .presentation {
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--16px);
+    }
+
+    input {
+        height: var(--48px);
+    }
+}
+
+@media (min-width: 330px) and (max-width: 599px) {
+    /* Smartphone */
+    body {
+        padding: 0 24px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--16px);
+    }
+
+    input {
+        height: var(--54px);
+    }
+
+    .get-started {
+        height: var(--54px);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  /* Tablets */
+    body {
+        padding: 0 32px;
+    }
+
+    h1 {
+        font-size: var(--60px);
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1279px) {
+  /* PC */
+    body {
+        padding: 0 80px;
+    }
+
+    h1 {
+        font-size: var(--66px);
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--16px);
+    }
+
+    .reasons-items{
+        height: 210px;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Large screen */
+    body {
+        padding: 0 148px;
+    }
+
+    h1 {
+        font-size: var(--72px);
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--16px);
+    }
+
+    .reasons-items {
+        height: 290px;
+    }
+}
+    </script>
   </head>
   <body>
 
