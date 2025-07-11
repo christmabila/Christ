@@ -83,13 +83,14 @@ body {
     height: 800px;
     overflow: hidden;
     margin-bottom: var(--48px);
+    background-image: url('IMAGES/Back-image.jpg');
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('IMAGES/Back-image.jpg');
+/*     background-image: url('IMAGES/Back-image.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
