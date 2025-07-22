@@ -24,7 +24,7 @@
 }
 
 .faq__box {
-    border-bottom: 1px solid rgb(45,45,45);
+/*     border-bottom: 1px solid rgb(45,45,45); */
     margin-bottom: 8px;
     min-width: 11.25rem;
 }
