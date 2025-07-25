@@ -178,7 +178,6 @@ header .custom__select__options div:hover {
 
 .sign__in {
   height: 2rem;
-  /* width: 4.8125rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +187,9 @@ header .custom__select__options div:hover {
   cursor: pointer;
   user-select: none;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -207,7 +209,7 @@ header .custom__select__options div:hover {
   text-decoration: none;
   color: white;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-text-size-adjust: 100%;
   letter-spacing: normal;
   line-height: 1;
