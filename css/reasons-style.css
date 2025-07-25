@@ -1,19 +1,5 @@
-.reasons__section {
+.more__reasons {
     margin-bottom: 3.5rem;
-}
-
-
-
-.title__reason {
-    width: 100%;
-    margin-top: 12px;
-}
-
-
-
-.title__reason h2 {
-    font-size: 18px;
-    font-weight: 500;
 }
 
 
@@ -81,6 +67,6 @@
     position: absolute;
     bottom: 0.25rem;
     right: 0.25rem;
-    height: 4rem;
-    width: 4rem;
+    height: 3.875rem;
+    width: 3.875rem;
 }
