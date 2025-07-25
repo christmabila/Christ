@@ -187,9 +187,6 @@ header .custom__select__options div:hover {
   cursor: pointer;
   user-select: none;
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
