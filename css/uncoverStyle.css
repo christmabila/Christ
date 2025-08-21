@@ -1,0 +1,7 @@
+.uncover p {
+    color: var(--text-secondary);
+}
+
+.uncover svg {
+    max-height: 380px;
+}

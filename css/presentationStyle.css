@@ -1,0 +1,22 @@
+.presentation {
+    padding-top: calc(78px + 30px);
+    text-align: center;
+    z-index: -1;
+}
+
+.presentation h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.presentation p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 440;
+    text-align: center;
+}

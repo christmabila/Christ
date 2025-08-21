@@ -1,0 +1,27 @@
+footer {
+    padding: 24px;
+    gap: 48px;
+}
+
+footer svg {
+    height: 18px;
+    width: 117px;
+}
+
+footer p {
+    color: var(--text-secondary);
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    column-gap: 32px;
+    padding-bottom: 80px;
+}
+
+footer ul li a {
+    /* color: var(--text-secondary); */
+    /* text-decoration: underline; */
+    font-weight: 500;
+}
